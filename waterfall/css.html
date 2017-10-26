@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+    <title>css实现瀑布流</title>
+    <!--此种方法有个问题，会对整体的两列排序，先做后右，就是如果下拉加载的话，后边加载的商品会到右边的上边-->
+    <style>
+        .newspaper
+        {
+            columns:100px 2;
+            -webkit-columns:100px 2; /* Safari and Chrome */
+            -moz-columns:100px 2; /* Firefox */
+        }
+        .newspaper img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p><b>注释：</b>Internet Explorer 不支持 columns 属性。</p>
+    <div class="newspaper">
+        <div class="1">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="2">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="3">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="4">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="5">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="6">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="7">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="8">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="9">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="10">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+        </div>
+        <div class="11">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="12">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+            <div>
+                <h4>恩恩，第一个呢</h4>
+            </div>
+        </div>
+        <div class="13">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+        </div>
+        <div class="14">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+        </div>
+        <div class="15">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+        </div>
+        <div class="16">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+        </div>
+        <div class="17">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+        </div>
+        <div class="18">
+            <image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/>
+        </div>
+        <div class="19">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+        </div>
+        <div class="20">
+            <image src="https://image-shop.chuchutong.com/culiu.cdn/image/201710/21/7980364c23df42d7f4e7414684ebbe1f1508550676_800_800.jpg"/>
+        </div>
+    </div>
+</div>
+<script src="../public/jquery-3.2.1.min.js"></script>
+<script>
+    var windowH = $(window).height();
+    var flag = true;
+    $(window).on('scroll',function () {
+        var documentH = $('.newspaper').height();
+        var scrollH = $(window).scrollTop();
+        if (documentH - windowH - scrollH <= 50 && flag){
+            flag = false;
+            var doms = '';
+            for (var i = 0 , iLen = i + 10; i < iLen; i++){
+                var dom = '<div class="' + i + '"> ' +
+                        '<image src="https://s17.mogucdn.com/mlcdn/c45406/170711_70349h6ae5cj5i79828b9f33f50gi_640x960.jpg"/> ' +
+                        '<div> ' +
+                        '<h4>恩恩，第' + i + '个呢</h4> ' +
+                        '</div>' +
+                        ' </div>';
+                doms = doms + dom;
+            }
+            $('.newspaper').append(doms);
+            setTimeout(function () {
+                flag = true;
+            },500);
+        }
+    });
+</script>
+</body>
+</html>
